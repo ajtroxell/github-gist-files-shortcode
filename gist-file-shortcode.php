@@ -3,7 +3,7 @@
 Plugin Name: GitHub Gist Files Shortcode
 Plugin URI: http://www.ajtroxell.com/github-gist-files-shortcode-plugin
 Description: Easily insert specific GitHub Gist files with this shortcode [gist id="xxxxxx" file="name"]
-Version: 1.1.1
+Version: 2.0
 Author: AJ Troxell
 Author URI: http://www.ajtroxell.com/
 */
@@ -17,8 +17,8 @@ Author URI: http://www.ajtroxell.com/
  * You can place these shortcodes in pages, posts or any custom content.
  *
  * INTALLATION
- * Unzip gist-file-shortcode.zip and upload gist-file-shortcode folder to wp-content/plugins.
- * On Wordpress admin panel, activate plugin.
+ * Unzip gist-file-shortcode.zip and upload the gist-file-shortcode folder to / wp-content/plugins/.
+ * On the Plugins > Installed Plugins page, activate the GitHub Gist Files Shortcode plugin.
  *
  * LICENSE
  * Released under the GPLv2 or later.
@@ -72,7 +72,18 @@ Author URI: http://www.ajtroxell.com/
 ?>
 <script type="text/javascript">  
 	//Add custom Quicktag button to the WordPress editor 
-	QTags.addButton( 'gist', 'Gist', '[gist id="" file=""]', '', '', 'Insert Gist' );
+	QTags.addButton( 'gist', 'Gist', prompt_user );
+    function prompt_user(e, c, ed) {
+        gist_id = prompt('Gist ID');
+        	if ( gist_id === null ) return;
+        gist_file = prompt('Gist File Name');
+        	if ( gist_file === null ) return;
+        	
+        gist_value = '[gist id="' + gist_id + ' file="' + gist_file + '"]';
+        this.tagStart = gist_value;
+
+        QTags.TagButton.prototype.callback.call(this, e, c, ed);
+    }
 </script>
 <?php
 	}

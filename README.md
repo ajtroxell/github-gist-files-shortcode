@@ -7,7 +7,7 @@ A Wordpress plugin which will insert a specific file from a Gist using the short
 Three ways are provided to insert the shortcode. The value "xxxxxx" represents your Gist ID, and "name" is the filename of the file within the Gist.
 
 *	Insert [gist id="xxxxxx" file="name"] manually.
-*	By using the HTML Editor shortcode button.
+*	By using the plain text editor shortcode button.
 *	By pressing ctrl+alt+g.
 
 You can place these shortcodes in pages, posts or any custom content.
@@ -25,7 +25,8 @@ You can place these shortcodes in pages, posts or any custom content.
 ![Inserted Gist](http://ajtroxell.com/wp-content/uploads/2013/06/gist-file-shortcode-screenshot-3.jpg "Inserted Gist")
 
 ##Changelog
+###2.0
+*	Using the shortcode button now triggers user prompts to enter Gist ID and filename instead of relying on manual insertion. Making the plugin more user friendly.
+
 ###1.1.1
 *	Added automatic plugin updating for non-wordpress.org downloads.
-
-Released under the GPLv2 or later.
