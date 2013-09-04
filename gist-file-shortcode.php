@@ -79,7 +79,7 @@ Author URI: http://www.ajtroxell.com/
         gist_file = prompt('Gist File Name');
         	if ( gist_file === null ) return;
         	
-        gist_value = '[gist id="' + gist_id + ' file="' + gist_file + '"]';
+        gist_value = '[gist id="' + gist_id + '" file="' + gist_file + '"]';
         this.tagStart = gist_value;
 
         QTags.TagButton.prototype.callback.call(this, e, c, ed);

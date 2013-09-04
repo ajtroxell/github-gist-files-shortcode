@@ -25,6 +25,9 @@ You can place these shortcodes in pages, posts or any custom content.
 ![Inserted Gist](http://ajtroxell.com/wp-content/uploads/2013/06/gist-file-shortcode-screenshot-3.jpg "Inserted Gist")
 
 ##Changelog
+###2.0.1
+*	Shortcode missing quotation mark from previous update.
+
 ###2.0
 *	Using the shortcode button now triggers user prompts to enter Gist ID and filename instead of relying on manual insertion. Making the plugin more user friendly.
 

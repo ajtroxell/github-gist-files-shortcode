@@ -35,6 +35,9 @@ http://ajtroxell.com/wp-content/uploads/2013/06/gist-file-shortcode-screenshot-3
 
 == Changelog ==
 
+= 2.0.1 =
+*	Shortcode missing quotation mark from previous update.
+
 = 2.0 =
 *	Using the shortcode button now triggers user prompts to enter Gist ID and filename instead of relying on manual insertion. Making the plugin more user friendly.
 
