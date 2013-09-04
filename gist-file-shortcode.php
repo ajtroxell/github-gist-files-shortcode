@@ -27,9 +27,9 @@ Author URI: http://www.ajtroxell.com/
 	// Check for updates
 	require 'plugin-updates/plugin-update-checker.php';
 		$gist_files_shortcode_update = new PluginUpdateChecker(
-	    'http://labs.ajtroxell.com/plugins/gist-file-shortcode/info.json',
+	    'http://labs.ajtroxell.com/plugins/github-gist-files-shortcode/info.json',
 	    __FILE__,
-	    'gist-file-shortcode'
+	    'github-gist-files-shortcode'
 	);
 
 
