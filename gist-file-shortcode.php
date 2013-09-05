@@ -3,7 +3,7 @@
 Plugin Name: GitHub Gist Files Shortcode
 Plugin URI: http://www.ajtroxell.com/github-gist-files-shortcode-plugin
 Description: Easily insert specific GitHub Gist files with this shortcode [gist id="xxxxxx" file="name"]
-Version: 2.0
+Version: 2.0.1
 Author: AJ Troxell
 Author URI: http://www.ajtroxell.com/
 */
